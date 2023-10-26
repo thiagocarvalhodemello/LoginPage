@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../img/Fundo.png');
+    background-size: cover;
+    background-position: center;
+}
+/* Define o layout da div principal */
+.container {
+    display: flex;
+    height: 100vh; /* Usando 100% da altura da janela do navegador */
+}
+
+/* Estilizando div à esquerda */
+.left-div {
+    flex: 1; /* A primeira div ocupará a metade do espaço disponível */
+    background: rgba(0, 0, 0, 0.30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+    font-size: 3.5em;
+    font-weight: 900;
+}
+h2{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.login-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.45);
+}
+form{
+    width: 70%;
+    color: white;
+    font-size: 1em;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.form-group label{
+    margin-top: 1rem;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 5px;
+    border-radius: 25px;
+    outline: none!important;
+}
+
+.form-group input:focus{
+    border: 3px solid #f218e7; /* Nova cor da borda quando em foco */
+}
+
+.form-group h5{
+    width: 100%;
+    margin-top: 5px;
+    text-align: end;
+}
+.form-group h5 a{
+    color: white;
+    text-decoration: none;
+}
+.form-group h5 a:hover{
+    color: rgba(22, 154, 195);
+}
+.form-group button{
+    width: 109%;
+    padding: 0.5rem;
+    border-radius: 25px;
+    margin-top: 1rem;
+    color: white;
+    font-size: 1em;
+    font-weight: 900;
+    background-color: rgba(22, 154, 195);
+}
+.form-group a{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.form-group a:hover{
+    color: rgba(22, 154, 195);
+}
+/* Estilizando div à direita */
+.right-div {
+    flex: 1; /* A segunda div também ocupará a metade do espaço disponível */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.right-div h2 a{
+    color: white;
+    text-decoration: none;
+}
+.right-div h2 a:hover{
+    color: rgba(22, 154, 195);
+}
+.right-div p{
+    color: white;
+    font-size: 1em;
+    margin-top: 3%;
+
+}
+.social-media{
+    width: 50%;
+    height: 15%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-media a {
+    width: 10%;
+}
+.social-media a:hover{
+    width: 15%;
+}
