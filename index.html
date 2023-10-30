@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="container">
+    <section id="container">
         <div class="left-div"><!-- Conteúdo da primeira div -->
             <h1>Faça seu login</h1>
             <div class="login-box">
@@ -34,7 +34,7 @@
         </div>
         <div class="right-div"><!-- Conteúdo da segunda div -->  
             <h1>Boas vindas de novo!</h1>
-            <h2>Faça seu cadastro <a href="#">clicando aqui!</a></h2>
+            <h2>Faça seu cadastro <a href="#cadastro">clicando aqui!</a></h2>
             <p>Encontre-nos nas redes sociais</p>
             <div class="social-media" >
                 <a href="" target="_blank" ><img src="src/assets/img/facebook.svg" alt="facebook"></a>
@@ -44,6 +44,37 @@
                 <a href="https://www.figma.com/file/qE1UqftoKp3hTSYfJaGZV9/Login?type=design&node-id=3%3A2&mode=design&t=VLPvaoH6UYuNSkVA-1" target="_blank" ><img src="src/assets/img/figma.svg" alt="figma" ></a>
             </div>
         </div>
+    </section>
+    <section id="cadastro">
+        <div >
+          <h2><a href="./index.html" class="voltar-inicio">Home</a></h2>  
+        </div>
+        <div class="box-form">
+            <h1>Cadastro</h1>
+            <form action="" method="post" id="fomulario">
+
+                <div class="coluna">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+                    
+                    <label for="CPF">CPF:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="123.456.789-12">
+    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="email@email.com">
+                </div>
+                <div class="coluna">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required placeholder="sua senha  ">
+                    
+                    <label for="data">Data Nascimento:</label>
+                    <input type="date" id="data_nascimento" name="data_nascimento" required>
+                </div>
+                <div class="enviar">
+                    <input type="submit" value="Cadastrar">
+                </div>
+            </div>
+        </form>
     </section>
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 :root {
     --cor-primaria:rgb(201, 13, 239); /* Define uma variável de cor */
     --cor-secundaria:#f218e7; /* Define uma variável de cor */
@@ -10,14 +11,17 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url('../img/Fundo.png');
-    background-size: cover;
-    background-position: center;
+    overflow: hidden;
 }
+
 /* Define o layout da div principal */
-.container {
+#container, #cadastro {
     display: flex;
     height: 100vh; /* Usando 100% da altura da janela do navegador */
+    background-image: url('../img/Fundo.png');
+    filter: brightness(1.2);
+    background-size: cover;
+    background-position: center;
 }
 
 /* Estilizando div à esquerda */
@@ -48,12 +52,12 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 70%;
     height: 60%;
     background-color: white;
     border-radius: 50px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.35);
 }
 form{
     width: 70%;
@@ -158,3 +162,111 @@ form{
     margin-top: 15%;
     width: 30%;
 }
+#cadastro{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    height: 80%;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.35);
+}
+.box-form h1,form{
+    width: 75%;
+}
+.box-form h1{
+    margin-top: 10%;
+}
+.box-form form{
+    margin-bottom: 10%;
+}
+
+#formulario{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.voltar-inicio{
+    color: white;
+    text-decoration: none;
+}
+.voltar-inicio:hover{
+    color: var(--cor-secundaria);
+}
+
+
+.box-form label{
+    margin-top: 1rem;
+}
+
+.box-form input{
+    width: 80%;
+    padding: 0.5rem;
+    margin-top: 5%;
+    border-radius: 25px;
+    outline: none!important;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-form input:focus{
+    border: 3px solid var(--cor-secundaria); /* Nova cor da borda quando em foco */
+}
+
+.coluna {
+    float: left;
+    width: 50%; /* Define a largura de cada coluna como metade da largura total */
+    display: flex;
+    flex-direction: column;
+}
+
+.enviar{
+    width: 80%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.enviar input{
+    font-size: 1em;
+    font-weight: 900;
+    color: white;
+    margin-left: 110px;
+    margin-bottom: 10px;
+    background-color: var(--cor-primaria);
+}
+.enviar input:hover{
+    color: rgb(116, 109, 109);
+    background-color: var(--cor-terciaria);
+    border: 2px solid var(--cor-secundaria);
+}
+@media (max-width: 768px) {
+    /* Estilos para telas menores ou iguais a 768px */
+    #container, #cadastro {
+        width: 100vh; /* Altere a largura máxima conforme necessário */
+    }
+    h1{
+        font-size: 2.3em;
+    }
+    h2{
+        font-size: 1.3em;
+    }
+    .right-div h1{
+        text-align: center
+    } 
+    .right-div h2{
+        text-align: center
+    } 
+}
+
