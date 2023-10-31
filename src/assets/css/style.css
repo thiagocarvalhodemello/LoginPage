@@ -11,6 +11,11 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    background-image: url('../img/Fundo.png');
+    filter: brightness(1.2);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     overflow: hidden;
 }
 
@@ -18,10 +23,7 @@ body{
 #container, #cadastro {
     display: flex;
     height: 100vh; /* Usando 100% da altura da janela do navegador */
-    background-image: url('../img/Fundo.png');
-    filter: brightness(1.2);
-    background-size: cover;
-    background-position: center;
+
 }
 
 /* Estilizando div à esquerda */
@@ -37,15 +39,14 @@ body{
 h1 {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-bottom: 25px;
-    font-size: 3.5em;
+    margin-bottom: 5%;
+    font-size: 4em;
     font-weight: 900;
 }
 h2{
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-bottom: 25px;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 900;
 }
 .login-box {
@@ -53,69 +54,53 @@ h2{
     align-items: center;
     justify-content: center;
     width: 70%;
-    height: 60%;
+    height: 65%;
     background-color: white;
     border-radius: 50px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     background: rgba(0, 0, 0, 0.35);
 }
-form{
-    width: 70%;
-    color: white;
-    font-size: 1em;
-}
 .form-group{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
+}
+.login-box form{
+    width: 75%;
+    height: 75%;
+    color: white;
+    font-size: 1em;
 }
 .form-group label{
+    font-size: 1.4em;
     margin-top: 1rem;
 }
 
 .form-group input{
-    width: 100%;
     padding: 0.5rem;
-    margin-top: 5px;
+    font-size: 1em;
+    margin-top: 3%;
+    font-weight: 900;
+    border: 1px solid var(--cor-secundaria);
     border-radius: 25px;
+    box-shadow: 0px 0px 5px 5px var(--cor-secundaria);
     outline: none!important;
+    transition: color 0.2s ease;
+}
+
+.form-group input:hover{
+    color: rgb(116, 109, 109);
+    background-color: var(--cor-terciaria);
 }
 
 .form-group input:focus{
-    border: 3px solid var(--cor-secundaria); /* Nova cor da borda quando em foco */
+    background-color: var(--cor-terciaria);
 }
 
-.form-group h5{
-    width: 100%;
-    margin-top: 5px;
-    text-align: end;
-}
-.form-group h5 a{
-    color: white;
-    text-decoration: underline;
-}
-.form-group h5 a:hover{
-    color: var(--cor-primaria);
-    font-size: 1.01em;  
-    font-weight: 900;
-}
-.form-group button{
-    width: 109%;
-    padding: 0.5rem;
-    border-radius: 25px;
-    margin-top: 1rem;
-    color: white;
-    font-size: 1em;
-    font-weight: 900;
-    background-color: var(--cor-primaria);
-    transition: color 0.2s ease;
-}
-.form-group button:hover{
-    color: rgb(116, 109, 109);
-    background-color: var(--cor-terciaria);
-    border: 2px solid var(--cor-secundaria);
-}
 .form-group a{
-    margin-top: 10px;
+    font-size: 1.4em;
+    margin-top: 10%;
     text-align: center;
     color: white;
     text-decoration: none;
@@ -124,6 +109,20 @@ form{
     color: var(--cor-primaria);
 
 }
+.form-group h5{
+    width: 100%;
+    margin-top: 5%;
+    text-align: end;
+}
+.form-group h5 a{
+    color: white;
+    text-decoration: underline;
+}
+.form-group h5 a:hover{
+    color: var(--cor-primaria);
+}
+
+
 /* Estilizando div à direita */
 .right-div {
     flex: 1; /* A segunda div também ocupará a metade do espaço disponível */
@@ -142,24 +141,24 @@ form{
 }
 .right-div p{
     color: white;
-    font-size: 1em;
-    margin-top: 3%;
+    font-size: 1.5em;
+    margin-top: 7%;
 
 }
 .social-media{
-    width: 50%;
-    height: 15%;
+    width: 70%;
+    height: 20%;
     margin-top: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .social-media a {
-    width: 10%;
+    width: 9%;
     transition: color 0.5s ease; 
 }
 .social-media a:hover{
-    margin-top: 15%;
+    margin-top: 10%;
     width: 30%;
 }
 #cadastro{
@@ -180,12 +179,16 @@ form{
     border-radius: 50px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     background: rgba(0, 0, 0, 0.35);
+    color: white;
 }
 .box-form h1,form{
     width: 75%;
 }
 .box-form h1{
     margin-top: 10%;
+}
+#cadastro h2{
+    margin-bottom: 10%;
 }
 .box-form form{
     margin-bottom: 10%;
@@ -195,8 +198,10 @@ form{
     width: 50%;
     display: flex;
     flex-direction: column;
+    margin-top: 15%;
 }
 .voltar-inicio{
+    font-size: 2em;
     color: white;
     text-decoration: none;
 }
@@ -206,21 +211,34 @@ form{
 
 
 .box-form label{
-    margin-top: 1rem;
+    font-size: 1.4em;
+    margin-top: 10%;
 }
 
 .box-form input{
     width: 80%;
     padding: 0.5rem;
-    margin-top: 5%;
+    margin-top: 3%;
     border-radius: 25px;
     outline: none!important;
     justify-content: center;
     align-items: center;
+
+    font-size: 1em;
+    font-weight: 900;
+    border: 1px solid var(--cor-secundaria);
+    box-shadow: 0px 0px 5px 5px var(--cor-secundaria);
+    outline: none!important;
+    transition: color 0.2s ease;
 }
 
 .box-form input:focus{
-    border: 3px solid var(--cor-secundaria); /* Nova cor da borda quando em foco */
+    color: rgb(116, 109, 109);
+    background-color: var(--cor-terciaria);
+}
+
+.box-form input:hover{
+    background-color: var(--cor-terciaria);
 }
 
 .coluna {
@@ -243,13 +261,13 @@ form{
     font-weight: 900;
     color: white;
     margin-left: 110px;
+    margin-top: 10%;
     margin-bottom: 10px;
     background-color: var(--cor-primaria);
 }
 .enviar input:hover{
     color: rgb(116, 109, 109);
     background-color: var(--cor-terciaria);
-    border: 2px solid var(--cor-secundaria);
 }
 @media (max-width: 768px) {
     /* Estilos para telas menores ou iguais a 768px */
