@@ -11,71 +11,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id="container">
-        <div class="left-div"><!-- Conteúdo da primeira div -->
-            <h1>Faça seu login</h1>
-            <div class="login-box">
-                <form action="login">
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required placeholder="exemplo@mail.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Senha</label>
-                        <input type="password" id="password" name="password" required placeholder="senha1234">
-                        <h5><a href="#">esqueci minha senha</a></h5>     
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" placeholder="Entrar" >
-                        <a href="#">Ainda não tenho uma conta</a>   
-                    </div>
-                </form>
-            </div>
-
-        </div>
-        <div class="right-div"><!-- Conteúdo da segunda div -->  
-            <h1>Boas vindas de novo!</h1>
-            <h2>Faça seu cadastro <a href="#cadastro">clicando aqui!</a></h2>
-            <p>Encontre-nos nas redes sociais</p>
-            <div class="social-media" >
-                <a href="" target="_blank" ><img src="src/assets/img/facebook.svg" alt="facebook"></a>
-                <a href="" target="_blank" ><img src="src/assets/img/instagram.svg" alt="instagram"></a>
-                <a href="" target="_blank" ><img src="src/assets/img/linkedin.svg" alt="linkedin"></a>
-                <a href="" target="_blank" ><img src="src/assets/img/youtube.svg" alt="youtube"></a>
-                <a href="https://www.figma.com/file/qE1UqftoKp3hTSYfJaGZV9/Login?type=design&node-id=3%3A2&mode=design&t=VLPvaoH6UYuNSkVA-1" target="_blank" ><img src="src/assets/img/figma.svg" alt="figma" ></a>
-            </div>
-        </div>
-    </section>
-    <section id="cadastro">
-        <div >
-          <h2><a href="./index.html" class="voltar-inicio">Home</a></h2>  
-        </div>
-        <div class="box-form">
-            <h1>Cadastro</h1>
-            <form action="" method="post" id="fomulario">
-
-                <div class="coluna">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required placeholder="Seu nome">
-                    
-                    <label for="CPF">CPF:</label>
-                    <input type="text" id="nome" name="nome" required placeholder="123.456.789-12">
+    <main>
+        <section id="container">
+            <div class="left__div"><!-- Conteúdo da primeira div -->
+                <h1>Faça seu login</h1>
+                <div class="login__box">
+                    <form action="login">
+                        <div class="form__group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required placeholder="exemplo@mail.com">
+                        </div>
+                        <div class="form__group">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password" name="password" required placeholder="senha1234">
+                            <h5><a href="#">esqueci minha senha</a></h5>     
+                        </div>
+                        <div class="form__group">
+                            <input type="submit" value="Entrar" class="placeholder">
+                            <a href="#">Ainda não tenho uma conta</a>   
+                        </div>
+                    </form>
+                </div>
     
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required placeholder="email@email.com">
-                </div>
-                <div class="coluna">
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" required placeholder="sua senha  ">
-                    
-                    <label for="data">Data Nascimento:</label>
-                    <input type="date" id="data_nascimento" name="data_nascimento" required>
-                </div>
-                <div class="enviar">
-                    <input type="submit" value="Cadastrar">
+            </div>
+            <div class="right__div"><!-- Conteúdo da segunda div -->  
+                <h1>Boas vindas de novo!</h1>
+                <h2>Faça seu cadastro <a href="#cadastro">clicando aqui!</a></h2>
+                <p>Encontre-nos nas redes sociais</p>
+                <div class="social__media" >
+                    <a href="" target="_blank" ><img src="src/assets/img/facebook.svg" alt="facebook"></a>
+                    <a href="" target="_blank" ><img src="src/assets/img/instagram.svg" alt="instagram"></a>
+                    <a href="" target="_blank" ><img src="src/assets/img/linkedin.svg" alt="linkedin"></a>
+                    <a href="" target="_blank" ><img src="src/assets/img/youtube.svg" alt="youtube"></a>
+                    <a href="https://www.figma.com/file/qE1UqftoKp3hTSYfJaGZV9/Login?type=design&node-id=3%3A2&mode=design&t=VLPvaoH6UYuNSkVA-1" target="_blank" ><img src="src/assets/img/figma.svg" alt="figma" ></a>
                 </div>
             </div>
-        </form>
-    </section>
+        </section>
+        <section id="cadastro">
+            <div >
+              <h2><a href="./index.html" class="voltar__inicio">Home</a></h2>  
+            </div>
+            <div class="box__form">
+                <h1>Cadastro</h1>
+                <form action="" method="post" id="fomulario">
+    
+                    <div class="coluna">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+                        
+                        <label for="CPF">CPF:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="123.456.789-12">
+        
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required placeholder="email@email.com">
+                    </div>
+                    <div class="coluna">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required placeholder="sua senha  ">
+                        
+                        <label for="data">Data Nascimento:</label>
+                        <input type="date" id="data_nascimento" name="data_nascimento" required>
+                    </div>
+                    <div class="enviar">
+                        <input type="submit" value="Cadastrar">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
 </html>

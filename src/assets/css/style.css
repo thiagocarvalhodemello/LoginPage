@@ -27,7 +27,7 @@ body{
 }
 
 /* Estilizando div à esquerda */
-.left-div {
+.left__div {
     flex: 1; /* A primeira div ocupará a metade do espaço disponível */
     background: rgba(0, 0, 0, 0.30);
     display: flex;
@@ -35,8 +35,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-
-h1 {
+h1{
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-bottom: 5%;
@@ -49,7 +48,7 @@ h2{
     font-size: 2em;
     font-weight: 900;
 }
-.login-box {
+.login__box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,24 +59,24 @@ h2{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     background: rgba(0, 0, 0, 0.35);
 }
-.form-group{
+.form__group{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 30px 0 30px 0;
 }
-.login-box form{
+.login__box form{
     width: 75%;
     height: 75%;
     color: white;
     font-size: 1em;
 }
-.form-group label{
+.form__group label{
     font-size: 1.4em;
     margin-top: 1rem;
 }
 
-.form-group input{
+.form__group input{
     padding: 0.5rem;
     font-size: 1em;
     margin-top: 3%;
@@ -89,63 +88,73 @@ h2{
     transition: color 0.2s ease;
 }
 
-.form-group input:hover{
+.placeholder{
+    font-weight: 900;
+    color: white;
+    background-color: var(--cor-secundaria);
+}
+
+.form__group input:hover{
     color: rgb(116, 109, 109);
     background-color: var(--cor-terciaria);
 }
 
-.form-group input:focus{
+.form__group input:focus{
     background-color: var(--cor-terciaria);
 }
 
-.form-group a{
+.form__group input[value="Entrar"]{
+    font-size: 1.5em;
+}
+
+.form__group a{
     font-size: 1.4em;
     margin-top: 10%;
     text-align: center;
     color: white;
     text-decoration: none;
 }
-.form-group a:hover{
+.form__group a:hover{
     color: var(--cor-primaria);
 
 }
-.form-group h5{
+.form__group h5{
     width: 100%;
     margin-top: 5%;
     text-align: end;
 }
-.form-group h5 a{
+.form__group h5 a{
     color: white;
     text-decoration: underline;
 }
-.form-group h5 a:hover{
+.form__group h5 a:hover{
     color: var(--cor-primaria);
 }
 
 
 /* Estilizando div à direita */
-.right-div {
+.right__div {
     flex: 1; /* A segunda div também ocupará a metade do espaço disponível */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.right-div h2 a{
+.right__div h2 a{
     color: white;
     text-decoration: underline;
 }
-.right-div h2 a:hover{
+.right__div h2 a:hover{
     color: var(--cor-primaria);
     text-shadow: white
 }
-.right-div p{
+.right__div p{
     color: white;
     font-size: 1.5em;
     margin-top: 7%;
 
 }
-.social-media{
+.social__media{
     width: 70%;
     height: 20%;
     margin-top: 2%;
@@ -153,11 +162,11 @@ h2{
     justify-content: space-between;
     align-items: center;
 }
-.social-media a {
+.social__media a {
     width: 9%;
     transition: color 0.5s ease; 
 }
-.social-media a:hover{
+.social__media a:hover{
     margin-top: 10%;
     width: 30%;
 }
@@ -168,7 +177,7 @@ h2{
     align-items: center;
     justify-content: center;
 }
-.box-form{
+.box__form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,16 +190,16 @@ h2{
     background: rgba(0, 0, 0, 0.35);
     color: white;
 }
-.box-form h1,form{
+.box__form h1,form{
     width: 75%;
 }
-.box-form h1{
+.box__form h1{
     margin-top: 10%;
 }
 #cadastro h2{
     margin-bottom: 10%;
 }
-.box-form form{
+.box__form form{
     margin-bottom: 10%;
 }
 
@@ -200,22 +209,22 @@ h2{
     flex-direction: column;
     margin-top: 15%;
 }
-.voltar-inicio{
+.voltar__inicio{
     font-size: 2em;
     color: white;
     text-decoration: none;
 }
-.voltar-inicio:hover{
+.voltar__inicio:hover{
     color: var(--cor-secundaria);
 }
 
 
-.box-form label{
+.box__form label{
     font-size: 1.4em;
     margin-top: 10%;
 }
 
-.box-form input{
+.box__form input{
     width: 80%;
     padding: 0.5rem;
     margin-top: 3%;
@@ -232,12 +241,12 @@ h2{
     transition: color 0.2s ease;
 }
 
-.box-form input:focus{
+.box__form input:focus{
     color: rgb(116, 109, 109);
     background-color: var(--cor-terciaria);
 }
 
-.box-form input:hover{
+.box__form input:hover{
     background-color: var(--cor-terciaria);
 }
 
@@ -257,13 +266,13 @@ h2{
     justify-content: center;
 }
 .enviar input{
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 900;
     color: white;
     margin-left: 110px;
     margin-top: 10%;
     margin-bottom: 10px;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
 }
 .enviar input:hover{
     color: rgb(116, 109, 109);
@@ -280,10 +289,10 @@ h2{
     h2{
         font-size: 1.3em;
     }
-    .right-div h1{
+    .right__div h1{
         text-align: center
     } 
-    .right-div h2{
+    .right__div h2{
         text-align: center
     } 
 }
